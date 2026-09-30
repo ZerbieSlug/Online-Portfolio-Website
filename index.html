@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+ <link href="style_index.css" rel="stylesheet">
+ <!-- Google Style Links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+ <title>Zerbie's Portfolio</title>
+</head>
+<body id="sc_intro">
+<!-- Navigation, Desktop-->
+<nav class="zp_nav">
+<div class="zp_nav_container">
+<a class="zp_nav_btn" href="#sc_intro">Introduction</a>
+<button class="zp_nav_gal_btn" onclick="dD_Open()">Gallery</button>
+<div class="zp_nav_drop" id="dropDown">
+<div class="zp_nav_drop_flex" id="dropDown2">
+<a class="zp_nav_drop_btn" href="#sc_bc">Business Cards</a>
+<a class="zp_nav_drop_btn" href="#sc_pa">Packaging</a>
+<a class="zp_nav_drop_btn" href="#sc_po">Posters</a>
+<a class="zp_nav_drop_btn" href="#sc_wd">Web Design</a>
+</div>
+</div>
+<a class="zp_nav_btn" href="#sc_so">Social</a>
+</div>
+</nav>
+<!-- Navigation, Mobile -->
+<button class="zp_nav_mobile_toggle" onclick="mobileShow()" id="mobileNav_open">[Menu]</button>
+<nav class="zp_nav_mobile" id="mobileNav">
+<button class="zp_nav_mobile_close" onclick="mobileClose()">Close</button>
+<a class="zp_nav_btn" href="#">Introduction</a>
+<a class="zp_nav_btn zp_nav_btn_m" href="#sc_bc">Gallery - Business Cards</a>
+<a class="zp_nav_btn zp_nav_btn_m" href="#sc_pa">Gallery - Packaging</a>
+<a class="zp_nav_btn zp_nav_btn_m" href="#sc_po">Gallery - Posters</a>
+<a class="zp_nav_btn zp_nav_btn_m" href="#sc_wd">Gallery - Web Design</a>
+<a class="zp_nav_btn" href="#sc_so">Social</a>
+</nav>
+<!-- Intro -->
+<h1>Welcome to my portfolio</h1>
+<section class="zp_index_sect">
+<h2>About Me!</h2>
+<div class="zp_index_intro">
+<img src="img/slug.webp" class="zp_index_slug">
+<p>Hello, I'm Zerbie. I'm an artist with an Associate's Degree in Graphic Design (obtained since May 2026).<br>
+Whether you're running a genuine business or are an independent online creator, I want to assist in establishing your brand and style with my skillset.<br>
+Not only am I an artist, but I'm also an avid gamer with a growing passion for storytelling. Although I'm better known for some of my 3D fan animations on YouTube, I want to make a career out of my designing capabilities.
+My tendency to experiment with varying art styles or methods means that I'm fairly flexible when it comes to producing various works.</p>
+</div>
+</section>
+<!-- Skillset -->
+<section class="zp_index_sect">
+<h2>My Skillset</h2>
+<div class="zp_index_skillset">
+<img src="img/skill_00.png" class="zp_index_skill_img">
+<img src="img/skill_01.png" class="zp_index_skill_img">
+<img src="img/skill_02.png" class="zp_index_skill_img">
+<img src="img/skill_03.png" class="zp_index_skill_img">
+<img src="img/skill_04.png" class="zp_index_skill_img">
+</div>
+</section>
+<!-- Gallery Preview-->
+<h2 id="sc_bc">Gallery</h2>
+<!-- Cards -->
+<section class="zp_index_sect_gal">
+<h2>Business Cards</h2>
+<p class="zp_index_desc">A demonstration/practice on how I do business cards, as well as logo design</p>
+<article class="zp_index_gal_article">
+<h3>2 Sided Designs</h3>
+<div class="zp_index_gal_horizon">
+<div class="zp_index_gal_disp_cards">
+<img src="img/gallery_hq/card_02.jpg" class="zp_index_gal_img_card" loading="lazy">
+<img src="img/gallery_hq/card_01.jpg" class="zp_index_gal_img_card" loading="lazy">
+</div>
+<div class="zp_index_gal_disp_cards">
+<img src="img/gallery_hq/card_04.jpg" class="zp_index_gal_img_card" loading="lazy">
+<img src="img/gallery_hq/card_03.jpg" class="zp_index_gal_img_card" loading="lazy">
+</div>
+</div>
+<h3>Extra Card Design</h3>
+<div class="zp_index_gal_disp_cards">
+<img src="img/gallery_hq/card_05.jpg" class="zp_index_gal_img_card" loading="lazy">
+</div>
+</article>
+</section>
+<!-- Packaging-->
+<section class="zp_index_sect_gal" id="sc_pa">
+<h2>Packaging Designs</h2>
+<p class="zp_index_desc">Practice on making designs for packaging, featuring an original fictional brand design</p>
+<article class="zp_index_gal_article">
+<h3>Pizza-Box Style</h3>
+<img src="img/gallery_hq/print_04.jpg" class="zp_index_gal_img_print" loading="lazy">
+<h3>Shipping-Box Style</h3>
+<img src="img/gallery_hq/print_03.jpg" class="zp_index_gal_img_print" loading="lazy">
+</article>
+</section>
+<!-- Posters -->
+<section class="zp_index_sect_gal" id="sc_po">
+<h2>Poster Designs</h2>
+<p class="zp_index_desc">Demonstrates my artistic approach and experience with Adobe software</p>
+<article class="zp_index_gal_article">
+<div class="zp_index_gal_horizon">
+<img src="img/gallery_hq/print_05.jpg" class="zp_index_gal_img_poster" loading="lazy">
+<img src="img/gallery_hq/print_06.jpg" class="zp_index_gal_img_poster" loading="lazy">
+</div>
+<div class="zp_index_gal_horizon">
+<img src="img/gallery_hq/print_07.jpg" class="zp_index_gal_img_poster" loading="lazy">
+<img src="img/gallery_hq/print_08.jpg" class="zp_index_gal_img_poster" loading="lazy">
+</div>
+</article>
+</section>
+<!-- Web Design -->
+<section class="zp_index_sect_gal" id="sc_wd">
+<h2>Web Design</h2>
+<article class="zp_index_gal_article">
+<p class="zp_index_desc">This is an interactive website I made for an online art project. Clicking the image will send you to another website</p>
+<a href="https://zerbietheslug.itch.io/kirby-enemy-info-collab-gallery"><img src="img/gallery_hq/web_preview.png" class="zp_index_gal_link_web"></a>
+</article>
+</section>
+<h2 id="sc_so">Social Accounts</h2>
+<section class="zp_index_sect">
+<p class="zp_index_desc">You can check out more of my artistic works through these accounts...</p>
+<article class="zp_index_gal_article">
+<div class="zp_index_gal_horizon_mobile zp_index_gal_horizon">
+<a href="https://www.youtube.com/@zerbietheslug5219"><img src="img/YouTube_Icon.webp" class="zp_index_gal_link_social"></a>
+<a href="https://www.tumblr.com/blog/zerbietheslug"><img src="img/Tumblr_Icon.webp" class="zp_index_gal_link_social"></a>
+<a href="https://ko-fi.com/zerbietheslug72113"><img src="img/kofi_logo.png" class="zp_index_gal_link_social"></a>
+</div>
+</article>
+</section>
+</body>
+<script>
+var mobile = document.getElementById("mobileNav");
+var mobileBtn = document.getElementById("mobileNav_open");
+var dD = document.getElementById("dropDown");
+var dD2 = document.getElementById("dropDown2");
+var dDBtn = document.getElementsByClassName("zp_nav_drop_btn");
+
+function mobileShow() {
+mobile.style.display = "flex";
+mobileBtn.style.display = "none";
+}
+
+function mobileClose() {
+mobile.style.display = "none";
+mobileBtn.style.display = "flex";
+}
+
+function dD_Open() {
+dD.style.display = "block";
+}
+
+document.addEventListener('mouseup', function(e) {
+    if (!dD2.contains(e.target)) {
+        dD.style.display = 'none';
+    }
+});
+</script>
+</html>
